@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <script
+      src="https://kit.fontawesome.com/2af254fe4c.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <div class="sticky top-0 bg-white drop-shadow-xl backdrop-blur-3xl z-10">
+    <nav class="flex justify-between items-center px-2 py-4 z-10">
+      <div class="flex items-center">
+        <a href="/">
+          <img
+          class="w-20"
+          src="https://upload.wikimedia.org/wikipedia/en/b/bd/Odisha_University_of_Technology_and_Research_Logo.png"
+          alt="..."
+        />
+        </a>
+        <div class="ml-2 leading-5 hidden min-[468px]:block">
+          <p class="font-semibold text-violet-900">Odisha University of Technology and Research</p>
+          <p class="font-semibold text-violet-900 hidden min-[610px]:block">Bhubaneswar (Formerly CET Bhubaneswar)</p>
+          <p class="text-gray-500">Alumni Association</p>
+        </div>
+      </div>
+      <div class="flex justify-between items-center">
+        <div class="nav-links lg:static absolute lg:min-h-fit bg-slate-100 lg:bg-white right-0 top-[-1000%] lg:w-auto w-full flex items-start justify-center px-5">
+          <ul class="flex lg:flex-row flex-col lg:items-center items-center lg:gap-[2vw] gap-8 text-lg lg:text-sm xl:text-lg font-bold my-8">
+            <li>
+              <!-- <span><a href="/about">ABOUT US</a></span> -->
+              <span>
+                <a class="group transition-all duration-300 ease-in-out" href="/about">
+                  <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    ABOUT US
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li>
+              <!-- <a href="#">GIVING BACK</a> -->
+              <span>
+                <a class="group transition-all duration-300 ease-in-out" href="#">
+                  <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    GIVING BACK
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li>
+              <!-- <a href="#">CHAPTERS</a> -->
+              <span>
+                <a class="group transition-all duration-300 ease-in-out" href="#">
+                  <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    CHAPTERS
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li>
+              <!-- <a href="#">MEMBERS</a> -->
+              <span>
+                <a class="group transition-all duration-300 ease-in-out" href="#">
+                  <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    MEMBERS
+                  </span>
+                </a>
+              </span>
+            </li>
+            <li>
+              <!-- <a href="#">ALUMNI ASSIST</a> -->
+              <span>
+                <a class="group transition-all duration-300 ease-in-out" href="#">
+                  <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                    ALUMNI ASSIST
+                  </span>
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <i class="fa-solid fa-magnifying-glass ml-2 px-4 py-3 bg-white text-2xl cursor-pointer"></i>
+          <ion-icon onclick="onToggleMenu(this)" name="menu" class="ml-2 px-4 py-4 bg-white text-3xl cursor-pointer lg:hidden"></ion-icon>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <script>
+    const navLinks = document.querySelector(".nav-links");
+
+    function onToggleMenu(e) {
+      e.name = e.name === "menu" ? "close" : "menu";
+      navLinks.classList.toggle("top-[100%]");
+      console.log(navLinks.classList);
+    }
+
+    function goToAlmaMater() {
+      window.location.href = "/secrets";
+    }
+
+  </script>
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>
